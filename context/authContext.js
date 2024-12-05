@@ -6,7 +6,12 @@ export const AuthContextProvider = ({ children }) => {
   const [user, setUser] = useState(null);
   const [isAuthenticated, setIsAuthenticated] = useState(undefined);
 
-  useEffect(() => {}, []);
+  useEffect(() => {
+    //onAuthStateChanged
+    setTimeout(() => {
+      setIsAuthenticated(true);
+    }, 3000);
+  }, []);
   // onAuthStateChanged
 
   const login = async (email, password) => {

@@ -1,10 +1,10 @@
-import { View, Text } from 'react-native'
-import React from 'react'
+import { View, Text } from "react-native";
+import React from "react";
 
 export default function SignIn() {
   return (
-    <View>
+    <View className="pt-20">
       <Text>SignIn</Text>
     </View>
-  )
+  );
 }
